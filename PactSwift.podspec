@@ -6,6 +6,9 @@ Pod::Spec.new do |s|
     s.license                = { :type => 'MIT', :file => 'LICENSE.md' }
     s.author                 = { 'iOS team' => 'ios@crunchyroll.com' }
 
+    s.vendored_frameworks    = 'PactSwiftMockServer.xcframework'
+    s.static_framework       = true
+
     s.swift_version          = '5.5'
     s.ios.deployment_target  = '13.0'
     s.tvos.deployment_target = '13.0'
